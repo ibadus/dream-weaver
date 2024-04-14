@@ -42,15 +42,13 @@ export default async function DreamPage({ params }: { params: { slug: string } }
 						</div>
 					</CardHeader>
 					<CardContent>
+						<h2>
+							Summary:
+						</h2>
 						<p>
 							{dream.description}
 						</p>
 					</CardContent>
-					<CardFooter className="justify-center">
-						<Button>
-							Play
-						</Button>
-					</CardFooter>
 				</Card>
 			</div>
 		</main>
