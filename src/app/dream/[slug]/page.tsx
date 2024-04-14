@@ -34,13 +34,12 @@ export default async function DreamPage({ params }: { params: { slug: string } }
 						<CardTitle className="text-center text-2xl">
 							{dream.title}
 						</CardTitle>
-						<Image
-							src="https://source.unsplash.com/featured/?boat"
-							alt="Illustration"
-							width={600}
-							height={600}
-							className="rounded-xl"
-						/>
+						<div className="flex justify-center">
+							<video width="500" height="600" controls muted autoPlay preload="none">
+								<source src={dream.vid_link} type="video/mp4" />
+								Your browser does not support the video tag.
+							</video>
+						</div>
 					</CardHeader>
 					<CardContent>
 						<p>
